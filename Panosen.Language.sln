@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.Language.CSharp", "Panosen.Language.CSharp\Panosen.Language.CSharp.csproj", "{C1CB4137-B1F9-476B-B4C7-8228EDFA25D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.Language.Java", "Panosen.Language.Java\Panosen.Language.Java.csproj", "{86AE324A-C94A-40AD-942B-2073C686EC47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.Language.Mysql", "Panosen.Language.Mysql\Panosen.Language.Mysql.csproj", "{AF03E4B3-8F0C-4A0B-BB2A-EEE47DF0D908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panosen.Language", "Panosen.Language\Panosen.Language.csproj", "{92647829-3B86-4D46-9F6A-3EEE69F365B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panosen.Language.Typescript", "Panosen.Language.Typescript\Panosen.Language.Typescript.csproj", "{F71F3812-1DB6-4304-9097-4A4EDAED3BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panosen.Language.Vue", "Panosen.Language.Vue\Panosen.Language.Vue.csproj", "{7F3B652E-DDC8-4145-B406-F82AAEA7AE88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1CB4137-B1F9-476B-B4C7-8228EDFA25D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CB4137-B1F9-476B-B4C7-8228EDFA25D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CB4137-B1F9-476B-B4C7-8228EDFA25D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CB4137-B1F9-476B-B4C7-8228EDFA25D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AE324A-C94A-40AD-942B-2073C686EC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AE324A-C94A-40AD-942B-2073C686EC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AE324A-C94A-40AD-942B-2073C686EC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AE324A-C94A-40AD-942B-2073C686EC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF03E4B3-8F0C-4A0B-BB2A-EEE47DF0D908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF03E4B3-8F0C-4A0B-BB2A-EEE47DF0D908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF03E4B3-8F0C-4A0B-BB2A-EEE47DF0D908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF03E4B3-8F0C-4A0B-BB2A-EEE47DF0D908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92647829-3B86-4D46-9F6A-3EEE69F365B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92647829-3B86-4D46-9F6A-3EEE69F365B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92647829-3B86-4D46-9F6A-3EEE69F365B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92647829-3B86-4D46-9F6A-3EEE69F365B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71F3812-1DB6-4304-9097-4A4EDAED3BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71F3812-1DB6-4304-9097-4A4EDAED3BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71F3812-1DB6-4304-9097-4A4EDAED3BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71F3812-1DB6-4304-9097-4A4EDAED3BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3B652E-DDC8-4145-B406-F82AAEA7AE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3B652E-DDC8-4145-B406-F82AAEA7AE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3B652E-DDC8-4145-B406-F82AAEA7AE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3B652E-DDC8-4145-B406-F82AAEA7AE88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9255C28E-5231-4841-A6C2-1AF69965D17F}
+	EndGlobalSection
+EndGlobal
