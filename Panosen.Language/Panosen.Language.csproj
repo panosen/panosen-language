@@ -11,6 +11,7 @@
     <DocumentationFile>bin\$(Configuration)\Panosen.Language.xml</DocumentationFile>
     <PackageIcon>panosen.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/panosen/panosen-language</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
