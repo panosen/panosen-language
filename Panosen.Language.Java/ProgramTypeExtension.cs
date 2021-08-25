@@ -17,30 +17,30 @@ namespace Panosen.Language.Java
         /// <param name="programType"></param>
         /// <param name="nullable"></param>
         /// <returns></returns>
-        public static string ToJavaType(this string programType, bool nullable = false)
+        public static string ToJavaType(this ProgramType programType, bool nullable = false)
         {
             switch (programType)
             {
-                case ProgramTypeConstant.INT:
+                case ProgramType.INT:
                     return nullable ? JavaTypeConstant._INTEGER : JavaTypeConstant.INTEGER;
 
-                case ProgramTypeConstant.BIGINT:
+                case ProgramType.BIGINT:
                     return nullable ? JavaTypeConstant._LONG : JavaTypeConstant.LONG;
 
-                case ProgramTypeConstant.DOUBLE:
+                case ProgramType.DOUBLE:
                     return nullable ? JavaTypeConstant._DOUBLE : JavaTypeConstant.DOUBLE;
 
-                case ProgramTypeConstant.BOOLEAN:
+                case ProgramType.BOOLEAN:
                     return nullable ? JavaTypeConstant._BOOLEAN : JavaTypeConstant.BOOLEAN;
 
-                case ProgramTypeConstant.STRING:
+                case ProgramType.STRING:
                     return JavaTypeConstant.STRING;
 
-                case ProgramTypeConstant.DATETIME:
+                case ProgramType.DATETIME:
                     return JavaTypeConstant.DATE;
 
                 default:
-                    return "error_2018082103";
+                    return "Panosen.Language.Java.ProgramTypeExtension.ToJavaType.DEFAULT";
             }
         }
     }

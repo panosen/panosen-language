@@ -12,20 +12,20 @@ namespace Panosen.Language.Typescript
         /// </summary>
         /// <param name="programType"></param>
         /// <returns></returns>
-        public static string ToTypescriptType(this string programType)
+        public static string ToTypescriptType(this ProgramType programType)
         {
             switch (programType)
             {
-                case ProgramTypeConstant.INT:
-                case ProgramTypeConstant.BIGINT:
-                case ProgramTypeConstant.DOUBLE:
+                case ProgramType.INT:
+                case ProgramType.BIGINT:
+                case ProgramType.DOUBLE:
                     return TypescriptTypeConstant.NUMBER;
-                case ProgramTypeConstant.STRING:
+                case ProgramType.STRING:
                     return TypescriptTypeConstant.STRING;
-                case ProgramTypeConstant.DATETIME:
+                case ProgramType.DATETIME:
                     return TypescriptTypeConstant.DATE;
                 default:
-                    return "error_2018082801";
+                    return "Panosen.Language.Typescript.ProgramTypeExtension.ToTypescriptType.DEFAULT";
             }
         }
     }

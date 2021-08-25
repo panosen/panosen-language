@@ -14,28 +14,28 @@ namespace Panosen.Language.Mysql
         /// <summary>
         /// 转换为mysql类型
         /// </summary>
-        public static string ToMysqlColumnType(this string programType, int varcharLength = 100, int decimalMaxSize = 10, int decimalDigitalSize = 0)
+        public static string ToMysqlColumnType(this ProgramType programType, int varcharLength = 100, int decimalMaxSize = 10, int decimalDigitalSize = 0)
         {
             switch (programType)
             {
-                case ProgramTypeConstant.INT:
+                case ProgramType.INT:
                     return MysqlDataTypeConstant.INT;
-                case ProgramTypeConstant.BIGINT:
+                case ProgramType.BIGINT:
                     return MysqlDataTypeConstant.BIGINT;
-                case ProgramTypeConstant.DOUBLE:
+                case ProgramType.DOUBLE:
                     return MysqlDataTypeConstant.DOUBLE;
-                case ProgramTypeConstant.BOOLEAN:
+                case ProgramType.BOOLEAN:
                     return $"{MysqlDataTypeConstant.TINYINT}(1)";
-                case ProgramTypeConstant.DATETIME:
+                case ProgramType.DATETIME:
                     return MysqlDataTypeConstant.DATETIME;
-                case ProgramTypeConstant.STRING:
+                case ProgramType.STRING:
                     return $"{MysqlDataTypeConstant.VARCHAR}({varcharLength})";
-                case ProgramTypeConstant.BYTES:
+                case ProgramType.BYTES:
                     return MysqlDataTypeConstant.BLOB;
-                case ProgramTypeConstant.DECIMAL:
-                    return $"{ProgramTypeConstant.DECIMAL}({decimalMaxSize},{decimalDigitalSize})";
+                case ProgramType.DECIMAL:
+                    return $"{ProgramType.DECIMAL}({decimalMaxSize},{decimalDigitalSize})";
                 default:
-                    return "ProgramTypeExtension.ToMysqlColumnType.NotImplementedException";
+                    return "Panosen.Language.Mysql.ProgramTypeExtension.ToMysqlColumnType.DEFAULT";
             }
         }
     }

@@ -14,23 +14,23 @@ namespace Panosen.Language.Vue
         /// </summary>
         /// <param name="programType"></param>
         /// <returns></returns>
-        public static string ToPropType(this string programType)
+        public static string ToPropType(this ProgramType programType)
         {
             switch (programType)
             {
-                case ProgramTypeConstant.INT:
-                case ProgramTypeConstant.BIGINT:
-                case ProgramTypeConstant.DOUBLE:
+                case ProgramType.INT:
+                case ProgramType.BIGINT:
+                case ProgramType.DOUBLE:
                     return PropTypeConstant.NUMBER;
 
-                case ProgramTypeConstant.BOOLEAN:
+                case ProgramType.BOOLEAN:
                     return PropTypeConstant.BOOLEAN;
 
-                case ProgramTypeConstant.STRING:
+                case ProgramType.STRING:
                     return PropTypeConstant.STRING;
 
                 default:
-                    return "error_2020010101";
+                    return "Panosen.Language.Vue.ProgramTypeExtension.ToPropType.DEFAULT";
             }
         }
     }

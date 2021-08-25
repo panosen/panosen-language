@@ -14,35 +14,33 @@ namespace Panosen.Language.CSharp
         /// <summary>
         /// 转换为csharp类型
         /// </summary>
-        /// <param name="programType"></param>
-        /// <param name="nullable"></param>
-        /// <returns></returns>
-        public static string ToCSharpType(this string programType, bool nullable = false)
+        public static string ToCSharpType(this ProgramType programType, bool nullable = false)
         {
-            if (string.IsNullOrEmpty(programType))
-            {
-                return "PROGRAM_TYPE_IS_NULL";
-            }
-
             switch (programType)
             {
-                case ProgramTypeConstant.INT:
+                case ProgramType.INT:
                     return nullable ? CSharpTypeConstant._INT : CSharpTypeConstant.INT;
 
-                case ProgramTypeConstant.BIGINT:
+                case ProgramType.BIGINT:
                     return nullable ? CSharpTypeConstant._LONG : CSharpTypeConstant.LONG;
 
-                case ProgramTypeConstant.DOUBLE:
+                case ProgramType.DOUBLE:
                     return nullable ? CSharpTypeConstant._DOUBLE : CSharpTypeConstant.DOUBLE;
 
-                case ProgramTypeConstant.BOOLEAN:
+                case ProgramType.BOOLEAN:
                     return nullable ? CSharpTypeConstant._BOOL : CSharpTypeConstant.BOOL;
 
-                case ProgramTypeConstant.DATETIME:
+                case ProgramType.DATETIME:
                     return nullable ? CSharpTypeConstant._DATETIME : CSharpTypeConstant.DATETIME;
 
-                case ProgramTypeConstant.STRING:
+                case ProgramType.DECIMAL:
+                    return nullable ? CSharpTypeConstant._DECIMAL : CSharpTypeConstant.DECIMAL;
+
+                case ProgramType.STRING:
                     return CSharpTypeConstant.STRING;
+
+                case ProgramType.BYTES:
+                    return $"{CSharpTypeConstant.BYTE}[]";
 
                 default:
                     return "Panosen.Language.CSharp.ProgramTypeExtension.ToCSharpType.DEFAULT";
