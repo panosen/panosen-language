@@ -127,5 +127,10 @@ namespace Panosen.Language.Mysql
         /// longtext
         /// </summary>
         public const string SMALLINT_UNSIGNED = "smallint unsigned";
+
+        /// <summary>
+        /// bit
+        /// </summary>
+        public const string BIT = "bit";
     }
 }
