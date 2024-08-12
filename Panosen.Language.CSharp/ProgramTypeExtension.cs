@@ -14,7 +14,7 @@ namespace Panosen.Language.CSharp
         /// <summary>
         /// 转换为csharp类型
         /// </summary>
-        public static string ToCSharpType(this ProgramType programType, bool nullable = false)
+        public static string ToCSharpType(this string programType, bool nullable = false)
         {
             switch (programType)
             {

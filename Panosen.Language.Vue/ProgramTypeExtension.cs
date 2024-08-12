@@ -12,9 +12,7 @@ namespace Panosen.Language.Vue
         /// <summary>
         /// ToPropType
         /// </summary>
-        /// <param name="programType"></param>
-        /// <returns></returns>
-        public static string ToPropType(this ProgramType programType)
+        public static string ToPropType(this string programType)
         {
             switch (programType)
             {

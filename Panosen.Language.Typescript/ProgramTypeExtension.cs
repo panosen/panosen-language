@@ -10,9 +10,7 @@ namespace Panosen.Language.Typescript
         /// <summary>
         /// 类型转换
         /// </summary>
-        /// <param name="programType"></param>
-        /// <returns></returns>
-        public static string ToTypescriptType(this ProgramType programType)
+        public static string ToTypescriptType(this string programType)
         {
             switch (programType)
             {

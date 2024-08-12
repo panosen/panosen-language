@@ -14,7 +14,7 @@ namespace Panosen.Language.Mysql
         /// <summary>
         /// 转换为mysql类型
         /// </summary>
-        public static string ToMysqlColumnType(this ProgramType programType, int varcharLength = 100, int decimalMaxSize = 10, int decimalDigitalSize = 0)
+        public static string ToMysqlColumnType(this string programType, int varcharLength = 100, int decimalMaxSize = 10, int decimalDigitalSize = 0)
         {
             switch (programType)
             {

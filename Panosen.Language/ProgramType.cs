@@ -5,51 +5,46 @@ namespace Panosen.Language
     /// <summary>
     /// 通用编程语言类型
     /// </summary>
-    public enum ProgramType
+    public static class ProgramType
     {
-        /// <summary>
-        /// 未配置
-        /// </summary>
-        None,
-
         /// <summary>
         /// INT == int/int?(c#) == int/Integer(java)
         /// </summary>
-        INT,
+        public const string INT = "INT";
 
         /// <summary>
         /// BIGINT == long/long?(c#) == long/Long(java)
         /// </summary>
-        BIGINT,
+        public const string BIGINT = "BIGINT";
 
         /// <summary>
         /// DOUBLE == double/double?(c#) == double/Double(java)
         /// </summary>
-        DOUBLE,
+        public const string DOUBLE = "DOUBLE";
 
         /// <summary>
         /// BOOLEAN == bool/bool?(c#) == boolean/Boolean(java)
         /// </summary>
-        BOOLEAN,
+        public const string BOOLEAN = "BOOLEAN";
 
         /// <summary>
         /// DATETIME = DateTime/DateTime?(c#) == LocalDateTime(java)
         /// </summary>
-        DATETIME,
+        public const string DATETIME = "DATETIME";
 
         /// <summary>
         /// STRING == string(c#) == String(java)
         /// </summary>
-        STRING,
+        public const string STRING = "STRING";
 
         /// <summary>
         /// DATETIME = byte[](c#) == byte[](java)
         /// </summary>
-        BYTES,
+        public const string BYTES = "BYTES";
 
         /// <summary>
         /// DATETIME = decimal(c#) == BigDecimal(java)
         /// </summary>
-        DECIMAL
+        public const string DECIMAL = "DECIMAL";
     }
 }

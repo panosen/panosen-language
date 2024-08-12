@@ -14,10 +14,7 @@ namespace Panosen.Language.Java
         /// <summary>
         /// 转换为java类型
         /// </summary>
-        /// <param name="programType"></param>
-        /// <param name="nullable"></param>
-        /// <returns></returns>
-        public static string ToJavaType(this ProgramType programType, bool nullable = false)
+        public static string ToJavaType(this string programType, bool nullable = false)
         {
             switch (programType)
             {
